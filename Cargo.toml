@@ -1,0 +1,13 @@
+[package]
+name = "no-ankama-rs"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+detour = "0.8.1"
+win32console = "0.1.5"
+winapi = {version="0.3.9", features=["winsock2", "winuser", "processenv"]}
+dns-lookup = "1.0.8"
