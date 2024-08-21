@@ -127,7 +127,7 @@ fn connect_detour(s: SOCKET, name: *const SOCKADDR, namelen: c_int) -> c_int {
 }
 
 fn get_redirected_ip() {
-    let ip = lookup_host("dofus2-co-production.ankama-games.com").unwrap();
+    let ip = lookup_host("dofus2-co-beta.ankama-games.com").unwrap();
 
     unsafe {
         for ip in ip {
